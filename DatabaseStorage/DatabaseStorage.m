@@ -120,6 +120,7 @@ typedef enum {
   sqlite3_finalize(_insertStatement);
   sqlite3_finalize(_deleteStatement);
   sqlite3_close(_database);
+  [super dealloc];
 }
 
 - (BOOL)writeBackupToPath:(NSString*)path error:(NSError**)error {
